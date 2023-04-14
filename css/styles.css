@@ -43,3 +43,21 @@ a {
     text-underline-position: under;
     text-decoration-thickness: 8;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-container {
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 20vw;
+}
+
+.calculator-container button{
+    width: calc(20vw/3);
+    height: calc(20vw/4);
+}
