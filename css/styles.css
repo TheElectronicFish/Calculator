@@ -44,20 +44,47 @@ a {
     text-decoration-thickness: 8;
 }
 
+html {
+}
+
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+    margin: 0;
+}
+
+.display-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 2px solid gray;
 }
 
 .calculator-container {
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid;
+}
+
+.first-row, .second-row, .third-row, .fourth-row, .fifth-row {
+    display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    width: 20vw;
-    height: 20vw;
+    justify-content: flex-start;
+    /* width: 20vw; */
+    /* height: 20vw; */
+}
+
+.fifth-row button{
+    flex: 1 0 auto;
 }
 
 .calculator-container button{
+    font-size: 28px;
     width: calc(20vw/3);
     height: calc(20vw/4);
 }
